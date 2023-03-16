@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modele de caixas</title>
+    <style>
+        h1{/* Box-level */
+            background-color: lightskyblue;
+            height: 50px;
+            width: 50px;
+
+            border: 5px solid darkgreen;
+
+            padding: 5px 5px;
+
+            margin: 2px 2px 4px 2px;
+            margin:auto;
+
+            outline: 5px dashed salmon;
+
+            display:inline
+
+            /*Podemos alterar os display para inline level*/
+            /*Quando mudamos para inline level, não podemos fazer alterações de height and width*/
+        }
+
+        a{ /* inline-level*/
+            width: 600px ;
+
+            color: rgb(148, 240, 0);
+
+            border: 15px solid red;
+
+            padding: 10px;
+
+            display:block;
+        
+            /*Podemos alterar os display para box-level*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Páragrafos também são exemplos de box-level, mas os <a href="#">links são também exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p> 
+</body>
+</html>
+<!--O comando margin: auto; faz com que centralize a caixa no meio -->
+<!--margin:auto; para deixar a caixa no meio-->
+<!--podemos simplificar as alterações dentro da caixa utilizando: border:10px solid darkslateregray;-->
+<!-- padding: 10px 20px; irá alterar primeiro em cima de depois em baixo. O mesmo acontece com a direita e esquerda-->

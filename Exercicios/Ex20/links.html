@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando links</title>
+    <style>
+
+        /*  SELETORES PERSONALIZADOS
+        #  = id
+        .  = class
+        :  = pseudo-class
+        :: = pseudo-elemento
+        >  = children
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: rgba(43, 43, 141, 0.671);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+a:visited{
+    color: red;
+}
+
+a:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+a:active{
+    color: rgba(62, 255, 59, 0.497);
+}
+
+a::before{
+    content: '🔗' ;
+}
+
+a::after{
+    content: '🔗';
+    text-decoration: none;
+    text-align: normal;
+    color: darkgray;
+}
+
+a.especial::after{
+    color: brown;
+    content: 'ESPECIAL';
+}
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="">Repositório GitHub</a></li>
+        <li><a href="" class="especial">Canal do Youtube</a></li>
+        <li><a href="">Site do CusoemVideo</a></li>
+    </ul>
+</body>
+</html>

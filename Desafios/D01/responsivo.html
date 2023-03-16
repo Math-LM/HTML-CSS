@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de responsividade</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+        main{
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            min-width:280px ;
+            max-width: 800px;
+
+            margin: auto;
+
+            /*margin: auto; faz o conteúdo ficar fixado no meio da tela
+            width: 800px; para deixar a largura fixa 
+            img{
+            width: 100%;} a imagem assim, ela aumenta e dimiminui seguindo a tela, mas não se adapta */
+        }
+
+        img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando responsividade</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In quo libero exercitationem nemo maxime explicabo fugit quidem commodi ut, architecto ducimus quos iusto magni nostrum aperiam quibusdam laborum. Est, cupiditate.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam fuga dolor nam voluptate? Nostrum cum eaque inventore odio saepe aliquam? Quam ea facere laborum tempore quo rem debitis beatae dolore!</p>
+
+        <picture>
+           <source media="(max-width:500px )" srcset="imagens/irina-blok-pq.jpg">
+           <img src="imagens/irina-blok.jpg" alt="Irina Blok">
+        </picture>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero, dolores. Aliquid asperiores velit consequuntur perspiciatis ratione dolor, fugit eveniet, quisquam ea totam reiciendis veniam dicta culpa laborum ut explicabo iusto.</p>
+    </main>
+</body>
+</html>

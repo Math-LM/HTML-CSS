@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peseudo-Classes</title>
+    <style>
+        div{
+            display: inline-block; /*Deixa tudo na mesma linha*/
+            background-color: rgba(0, 255, 255, 0.189);
+            text-align: center;
+            height: 100px; /*altura*/
+            width: 100px;  /*largura*/
+        }
+
+        div:hover{
+            background-color: yellow;
+        }
+
+        div#d1:hover{
+            background-color: blue;
+        }
+        div#d2:hover{
+            color: green;
+            text-decoration: underline;
+            background-color: brown;
+        }
+        div#d3:hover{
+            color: red;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">01</div>
+    
+
+    <div id="d2">My name is</div>
+
+
+    <div id="d3">03</div>
+    
+</body>
+</html>
